@@ -1,0 +1,66 @@
+label{
+    color: $colorContacto;
+    margin: $marginLabel;
+}
+
+fieldset{
+    margin-top: $marginFieldsetT;
+    @include Tamanio($anchoFieldset,$altoFieldset);
+    position: relative;
+    left: 29%;
+    
+    .divNameEmail{
+        display: grid;
+        grid-template-columns: $nombreEmailC $nombreEmailC2;
+        grid-template-rows: $nombreEmailRow $nombreEmailRow2;
+        align-items: center;
+        @include Tamanio($anchoEmail,$altoEmail);
+    }
+    
+    .divSex{
+        @include flex( row , none, center);
+        @include Tamanio($anchoSexo,$altoSexo);
+    }
+    
+    .divAge{
+        @include flex(row, none, center);
+        @include Tamanio($anchoEdad, $altoEdad);
+    }
+    
+    .divText{
+        @include flex( column, none, none);
+        padding-left: $paddingComentarioL;
+        padding-top: $paddingComentarioT;
+        @include Tamanio($anchoComentario, $altoComentario);
+    }
+    
+    .divInput{
+        @include flex( row, center, center);
+        justify-content: center;
+    }
+    
+    
+    .inputName{
+        position: relative;
+        right: $posNombre;
+        height: $alturaNombre;
+    }
+    
+    .inputEmail{
+        position: relative;
+        right: $posEmail;
+    }
+    
+    .selectSex{
+        position: relative;
+        right: $posSexo;
+        height: $alturaSexo;
+    }
+    
+    .selectAge{
+        position: relative;
+        right: $posEdad;
+    }
+}
+
+

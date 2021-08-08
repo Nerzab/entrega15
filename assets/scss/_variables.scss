@@ -1,0 +1,157 @@
+$colorFooterTexto: #0d09ce;
+$colorNavegador: #808080;
+$colorNavegadorLetra:#000000;
+$colorActivo:#16036E;
+$colorFondo: #000000;
+$colorListas: #8868a2;
+$colorLinks: #807b7a;
+$colorTitulo:#f5f5f5;
+$colorDescripcion:#808080; 
+$colorContacto: #ff0000;
+$colorDiscografia: #8f93ff;
+$colorBotones:#000000;
+
+
+$fuenteTitulo: 'Ubuntu', sans-serif;
+$fuenteDescripcion: 'Roboto', sans-serif;
+
+// Tamaño fuentes 
+$tamanioNavegador:1.375rem;
+$tamanioActivo:2rem;
+$tamanioTitulo:5rem;
+$tamanioTitulon600Max:2.063rem;
+$tamanioTitulo600Min:3.125rem;
+$tamanioTitulo992Min:3.75rem;
+$tamanioDescripcion600Max:0.625rem;
+$tamanioDescripcion600Min:0.875rem;
+$tamanioDescripcion992Min:0.938rem;
+$tamanioPiePaginaTextoMin:0.688rem;
+$tamanioPiePaginaTextoMax:0.875rem;
+
+// Medidas
+$anchoNav: 100%;
+$altoNav: 6.25rem;
+$marginLogoT: 3.125rem;
+$marginNavR: 6%;
+$marginNavB: 5%;
+
+$marginFooterL:70%;
+$paddingFooterT: 20%;
+$marginFooterB: 2%;
+$marginItemL: 70%;
+$marginItemB: 2%;
+$footerImagenW: 12%;
+$footerImagenH: 15%;
+
+
+$tamanioTitulo:100%;
+$marginTituloT:5%;
+$anchoIndex:100%;
+$altoIndex:100%;
+$paddingIndextT:3%;
+$TamanioIndexC:1fr;
+$TamanioIndexC2:1fr;
+$TamanioIndexR:1fr;
+$paddingDescripcionR:1rem;
+$interlineadoDescripcion: 2;
+$anchoImagenIndex:80%;
+$altoImagenIndex:100%;
+$marginTituloMax600:3%;
+$marginTituloMin600:3%;
+$marginTituloMin992:3%;
+
+$anchoAlbums:95%;
+$columnaAlbums1:33%;
+$columnaAlbums2:33%;
+$columnaAlbums3:33%;
+$filaAlbums1:28.75rem;
+$filaAlbums2:28.75rem;
+$filaAlbums3:28.75rem;
+$gapColumnas:2.5rem;
+$gapLineas:3.125rem;
+$anchoImagenAlbums:100%;
+$altoImagenAlbums:100%;
+$paddingH1AlbumsL:3%;
+
+
+$marginToursT:6%;
+$marginToursL:10%;
+$alturaTours:15.625rem;
+$marginToursList:1.25rem;
+
+
+$anchoImgGaleria1Max600:90%;
+$altoImgGaleria1Max600:100%;
+$anchoImgGaleria1Min600:90%;
+$altoImgGaleria1Min600:100%;
+$anchoImgGaleria1Min992:90%;
+$altoImgGaleria1Min992:100%;
+$padding1L:25%;
+$padding1RMax600:20%;
+$padding1RMin600:20%;
+$padding1RMin992:20%;
+
+$padding2L:30%;
+$anchoImgGaleria2Max600:60%;
+$altoImgGaleria2Max600:100%;
+$anchoImgGaleria2Min600:60%;
+$altoImgGaleria2Min600:100%;
+$anchoImgGaleria2Min992:60%;
+$altoImgGaleria2Min992:100%;
+
+$padding3L:34%;
+$padding3RMax600:30%;
+$padding3RMin600:30%;
+$padding3RMin992:30%;
+$anchoImgGaleria3Max600:100%;
+$altoImgGaleria3Max600:100%;
+$anchoImgGaleria3Min600:100%;
+$altoImgGaleria3Min600:100%;
+$anchoImgGaleria3Min992:100%;
+$altoImgGaleria3Min992:100%;
+
+$marginLabel:20%;
+$marginFieldsetT: 5%;
+$anchoFieldset:40%;
+$altoFieldset: 28.125rem;
+$nombreEmailC:1fr;
+$nombreEmailC2:1fr;
+$nombreEmailRow: 1.563rem;
+$nombreEmailRow2: 1.563rem;
+$anchoEmail:50%;
+$altoEmail:1.875rem;
+$anchoSexo: 22%;
+$altoSexo:21%;
+$anchoEdad:23%;
+$altoEdad:15%;
+$anchoComentario: 80%;
+$altoComentario: 12.5rem;
+$paddingComentarioL: 10%;
+$paddingComentarioT:1rem;
+$alturaNombre:1.29rem;
+$posNombre:3.9%;
+$posEmail:3.9%;
+$posSexo:-27.8%;
+$alturaSexo:2rem;
+$posEdad:-16.8%;
+
+
+
+$duracionAnimacion: 2500ms;
+
+
+$espacioTextoFooterMin600: 0.688rem;
+$espacioTextoFooterMax600:  0.3rem;
+$espacioLetrasTitulo:0.625rem;
+
+@mixin flex($dir, $justify, $aling) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin Tamanio($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}      

@@ -1,0 +1,16 @@
+.albums{
+    width: $anchoAlbums;
+    display: grid;
+    grid-template-columns: $columnaAlbums1 $columnaAlbums2 $columnaAlbums3;
+    grid-template-rows: $filaAlbums1  $filaAlbums2 $filaAlbums3;
+    grid-column-gap: $gapColumnas;
+    grid-row-gap: $gapLineas;
+    img{
+        @include Tamanio($anchoImagenAlbums, $altoImagenAlbums)
+    } 
+}
+h1{
+    color: $colorDiscografia;
+    font-family: $fuenteTitulo;
+    padding-left: $paddingH1AlbumsL;
+}

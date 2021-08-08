@@ -1,0 +1,17 @@
+.tourList{
+    margin-top: $marginToursT;
+    margin-left: $marginToursL;
+    display: flex;
+    flex-direction: column;
+    height: $alturaTours;
+    li{
+        display: inline-block;
+        margin: $marginToursList;
+        .buttonColor{
+            color: $colorBotones;
+        }
+    } 
+}
+
+
+

@@ -1,0 +1,76 @@
+
+.divImg{
+    padding-left: $padding1L;
+}
+.divImg2{
+    padding-left: $padding2L;
+}
+.divImg3{
+    padding-left: $padding3L;
+}
+
+@media only screen and (max-width:600px){
+
+    .divImg {
+        padding-right: $padding1RMax600;
+        img{
+            @include Tamanio( $anchoImgGaleria1Max600, $altoImgGaleria1Max600)
+        }
+    }
+
+    .divImg2 {
+        img{
+            @include Tamanio($anchoImgGaleria2Max600,$altoImgGaleria2Max600)
+        }
+}
+    .divImg3{
+        padding-right: $padding3RMax600;
+        img{
+            @include Tamanio( $anchoImgGaleria3Max600, $altoImgGaleria3Max600)
+        }
+    }
+}
+
+@media only screen and (min-width:600px){
+
+    .divImg {
+        padding-right: $padding1RMin600;
+        img{
+            @include Tamanio( $anchoImgGaleria1Min600, $altoImgGaleria1Min600)
+        }
+    }
+
+    .divImg2 {
+        img{
+            @include Tamanio( $altoImgGaleria2Max600,$anchoImgGaleria2Min600)
+        }
+    }   
+    .divImg3{
+        padding-right: $padding3RMin600;
+        img{
+            @include Tamanio( $anchoImgGaleria3Min600, $altoImgGaleria3Min600)
+        }
+    }
+
+}
+
+
+@media only screen and (min-width:992px) {
+    .divImg {
+        padding-right: $padding1RMin992;
+        img{
+            @include Tamanio( $anchoImgGaleria1Min992, $altoImgGaleria1Min992)
+        }
+    }
+    .divImg2{
+        img{
+            @include Tamanio( $anchoImgGaleria2Min992,$altoImgGaleria2Min992)
+        }
+    }
+    .divImg3{
+        padding-right: $padding3RMin992;
+        img{
+            @include Tamanio( $anchoImgGaleria3Min992,$altoImgGaleria3Min992)
+        }
+    }
+}

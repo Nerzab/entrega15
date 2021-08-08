@@ -1,0 +1,109 @@
+@import "../variables";
+
+body{
+    background-color: $colorFondo;
+    margin: 0rem;
+    padding: 0rem;
+}
+th,li{
+    color: $colorListas;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $colorLinks;
+}
+
+.navegador{
+    
+    &__lista{
+        @include flex(row, space-evenly, center);
+        @include Tamanio($anchoNav, $altoNav);
+        font-size: $tamanioNavegador;
+        margin-right: $marginNavR;
+        background-color: $colorNavegador;
+        margin-bottom: $marginNavB;
+
+    }
+
+    &__link{
+        color: $colorNavegadorLetra;
+        text-decoration: none;
+
+        &--activo{
+            
+            color:$colorActivo;
+            font-size: $tamanioActivo;
+        }
+    }
+}
+
+.logo{
+    margin-top: $marginLogoT;
+    @include flex(row, center, center);
+    animation-name: logoTest;
+    animation-duration: $duracionAnimacion;
+    animation-iteration-count: 1;
+} 
+
+
+@keyframes logoTest{
+
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+
+}
+
+
+.piePagina{
+    
+    &__item1{
+        margin-left: $marginFooterL;
+        padding-top: $paddingFooterT;
+        margin-bottom: $marginFooterB;
+    }
+    &__texto{
+        color: $colorFooterTexto;       
+
+    }
+    &__item{
+        margin-left: $marginItemL;
+        margin-bottom: $marginItemB;
+    }
+    &__link{
+        text-decoration: none;
+    }
+    &__imagen{
+        @include Tamanio($footerImagenW, $footerImagenH);
+    }
+}
+
+@media only screen and (max-width:600px){
+
+
+    footer{
+        font-size:$tamanioPiePaginaTextoMin;
+        word-spacing: $espacioTextoFooterMin600;
+    }
+}
+@media only screen and (min-width:600px){
+
+
+    .piePagina__texto{
+        font-size: $tamanioPiePaginaTextoMax;
+        word-spacing: $espacioTextoFooterMax600;
+    }
+}
+
+
+
+
+

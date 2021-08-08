@@ -1,0 +1,69 @@
+
+.nombreSuicide{
+    width: $tamanioTitulo;
+    text-align: center;
+    color: $colorTitulo;
+    font-size: $tamanioTitulo;
+    margin-top: $marginTituloT;
+    letter-spacing: $espacioLetrasTitulo;
+    font-family: $fuenteTitulo;
+}
+
+.index{
+    @include Tamanio($anchoIndex, $altoIndex);
+    padding-top: $paddingIndextT;
+    display: grid;
+    grid-template-columns: $TamanioIndexC $TamanioIndexC2;
+    grid-template-rows: $TamanioIndexR;
+    align-items: center;
+    justify-items: center;
+
+    .descripcion{ 
+        color: $colorDescripcion;
+        font-family: $fuenteDescripcion;
+        padding-right: $paddingDescripcionR;   
+        line-height: $interlineadoDescripcion;
+    }
+    img{
+        @include Tamanio($anchoImagenIndex, $altoImagenIndex)
+    }
+}
+
+
+
+
+@media only screen and (max-width:600px){
+
+    .nombreSuicide{
+        margin-top: $marginTituloMax600;
+        font-size: $tamanioTitulon600Max;
+    }
+    .descripcion{
+        font-size: $tamanioDescripcion600Max;
+    }
+}
+
+@media only screen and (min-width:600px){
+
+    .nombreSuicide{
+        margin-top: $marginTituloMin600;
+        font-size:$tamanioTitulo600Min;
+    }
+    .descripcion{
+        font-size:$tamanioDescripcion600Min;
+    }
+}
+
+
+@media only screen and (min-width:992px) {
+
+
+    .nombreSuicide{
+        margin-top: $marginTituloMin992;
+        font-size:$tamanioTitulo992Min;
+    }
+    .descripcion{
+        font-size: $tamanioDescripcion992Min;
+    }
+}
+
